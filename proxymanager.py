@@ -1,4 +1,4 @@
-import requests, random, threading, socket, csv, os, sys
+import requests, random, threading, csv, os, sys
 from termcolor import colored
 from pyfiglet import Figlet
 
