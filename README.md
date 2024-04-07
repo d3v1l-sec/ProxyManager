@@ -4,7 +4,7 @@
 
 ## Usage
 
-**[CMD]**
+**On MS Windows CMD :**
 
 **``python proxymanager.py``**
 
@@ -18,7 +18,7 @@
 
 2. `` cd ProxyManager ``
 
-3. `` pip install -r requirements ``
+3. `` pip install -r requirements.txt ``
 
 4. `` python proxymanager.py ``
 
