@@ -155,7 +155,7 @@ class ProxyChecker:
             for proxy_d in proxy_import_data:
                 x = threading.Thread(target=self.validate_connection, args=(str(proxy_d[1]),))
                 x.start()
-            f.write(str(proxy_d[1])+"\n")
+                f.write(str(proxy_d[1])+"\n")
         f.close()
 
 
