@@ -1,4 +1,6 @@
-# **ProxyManager**
+# **ProxyManager v1.1**
+
+![Proxymanager-Logo](https://github.com/h4ppym4n14c/ProxyManager/assets/166177727/fce7d068-41a8-4158-b4ec-3cb6a7761cc9)
 
 **This application collects proxy ip addresses, validates the connection state and export the proxies which are using the protocol you prefere.**
 
