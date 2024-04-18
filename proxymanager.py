@@ -142,7 +142,7 @@ class ProxyChecker:
             'Accept-Language': 'en-US,en;q=0.5'
         }
         try:
-            check_response = requests.get(url="https://cloudflare.com", headers=headers, proxies={'proxy': f'{proxy}'}, timeout=0.2)
+            check_response = requests.get(url="https://cloudflare.com", headers=headers, proxies={'proxy': f'{proxy}'}, timeout=2)
             if check_response.status_code == 200:
                 print(colored("[CONNECTION SUCCESSFULL]", "green", attrs=['reverse', 'blink']), proxy, colored("\t[STATUS]", "cyan"), check_response.status_code, colored("\t[RESPONSE BY]"), check_response.url)
         except:
@@ -153,9 +153,10 @@ class ProxyChecker:
         filename = f"{self.proxy_protocol}-proxies.txt"
         with open(filename, "w") as f:
             for proxy_d in proxy_import_data:
+                self.validate_connection(proxy=proxy_d[1])
                 x = threading.Thread(target=self.validate_connection, args=(str(proxy_d[1]),))
                 x.start()
-            f.write(str(proxy_d[1])+"\n")
+                f.write(str(proxy_d[1])+"\n")
         f.close()
 
 
