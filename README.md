@@ -27,4 +27,4 @@
 
 ## Information
 
-In the "examples" folder you will find some scraped proxy addresses, sorted by protocol. After you loaded a new dump of a proxies the examples wil be overwritten.
+In the "examples" folder you will find some scraped proxy addresses, sorted by protocol. After downloading a new dump of a proxies the examples wil be overwritten.
